@@ -9,6 +9,7 @@ body {
     align-items: center;
     justify-content: space-evenly;
     padding-right: 350px;
+    flex-direction: row;
 }
 
 .logo {
@@ -18,7 +19,8 @@ body {
     background-color: #1ECBF4;
     color: white;
     border: none;
-    font-size: 1.1rem;
+    font-size: 17px;
+    text-decoration: none;
 }
 
 .header {
@@ -34,6 +36,7 @@ body {
 }
 
 .opt {
+    display: flex;
     color: white;
     background-color:#1ECBF4;
     border: none;
@@ -41,7 +44,10 @@ body {
     padding: none;
     width: 15%;
     height: 50px;
-    font-size: 1.1rem;
+    font-size: 17px;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
 }
 
 .opt:hover {
@@ -49,31 +55,103 @@ body {
     color:#1ECBF4;
 }
 
-.dangki {
-    background-color: red;
+.subscribe {
+    background-color: #dc3545;
+    font-size: 16px;
     color: white;
-    border-color: red;
+    border-color: #dc3545;
     margin: 0;
     margin-bottom: 20px;
     display: inline-block;
-    height: 30px;
+    height: 40px;
+    width: 150px;
+    border: 1px;
+    border-radius: 5px;
 }
 
-
-h1 {
+.header h1 {
     margin-top: 50px;
     margin-bottom: 0;
     font-size: 2.5rem;
 }
 
-p {
+.header p {
     margin-top: 5px;
     margin-bottom: 15px;
 }
 
 .email {
-    height: 29px;
-    width: 350px;
-    border: none;
+    height: 38px;
+    width: 500px;
+    border: 1px;
     padding-left: 0.5rem;
+    border-radius: 5px;
+    font-size: 17px;
 }
+
+.intro-content {
+    display: block;
+    width: 65%;
+    padding: 100px 50px;
+    margin: 0;
+}
+
+.sizeLogo {
+    display: inline-block;
+    font-size: 200px;
+    color: #1ecbf4; 
+    padding: 100px;
+}
+
+.intro {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.intro-contact {
+    height: 50px;
+    background-color: #6c757d;
+    color: white;
+    border-color: #6c757d;
+    margin: 0;
+    font-size: 20px;
+    width: 250px;
+    border: 1px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.intro-contact:hover {
+    background-color: darkgrey;
+    color: white;
+}
+
+.intro-content, .values-content h2 {
+    font-size: 32px;
+}
+
+.intro-content, .values-content h4 {
+    font-size: 24px;
+}
+
+p {
+    font-size: 16px;
+}
+
+.values {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+    background-color:#f6f6f6;
+}
+
+.values-content {
+    display: block;
+    width: 65%;
+    padding: 100px 50px;
+    margin: 0;
+}
+
